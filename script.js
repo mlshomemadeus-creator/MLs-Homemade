@@ -1,42 +1,17 @@
-// Smooth scroll function
-function smoothScroll(id) {
-    const element = document.getElementById(id);
-    if (element) {
-        element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    }
+let order = [];
+
+function addToOrder(item) {
+    order.push(item);
+    renderOrder();
 }
 
-// Add scroll animation to recipe cards
-document.addEventListener('DOMContentLoaded', function() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.animation = 'slideIn 0.6s ease-out';
-            }
-        });
-    });
+function renderOrder() {
+    const list = document.getElementById("orderList");
+    list.innerHTML = "";
 
-    const recipeCards = document.querySelectorAll('.recipe-card');
-    recipeCards.forEach(card => {
-        observer.observe(card);
+    order.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        list.appendChild(li);
     });
-});
-
-// Add CSS animation
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes slideIn {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-`;
-document.head.appendChild(style);
+}

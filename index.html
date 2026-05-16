@@ -3,96 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ML's Homemade - Fresh & Delicious Recipes</title>
+    <title>ML's Homemade</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">🍳 ML's Homemade</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#recipes">Recipes</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div>
-                <h1>Welcome to ML's Homemade</h1>
-                <p>Discover delicious homemade recipes crafted with love and fresh ingredients</p>
-                <button class="cta-button" onclick="smoothScroll('recipes')">Explore Recipes</button>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h1>ML's Homemade</h1>
+
+    <div>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-text">
+        <h2>We're here<br>to bake you happy!</h2>
+
+        <p>
+            Fresh homemade Brazilian treats made with love — 
+            made to order and delivered with care.
+        </p>
+
+        <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+
+    <div class="hero-image">
+        <img 
+            src="brigadeiro_header_1.jpg"
+            alt="Brigadeiros"
+        >
+    </div>
+
+</section>
+
+<!-- MENU -->
+<section id="menu">
+    <h2 class="section-title">Our Menu</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="brigadeiro_header_1.jpg" alt="Brigadeiro">
+            <div class="card-content">
+                <h3>Brigadeiros</h3>
+                <p>Classic Brazilian chocolate truffles.</p>
+                <button class="add-btn">Order</button>
             </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>
-                Welcome to ML's Homemade! We believe in the power of home cooking. Every recipe is carefully crafted 
-                with fresh, quality ingredients to bring you authentic flavors and memorable meals. Join us on this 
-                culinary journey and discover the joy of cooking from scratch.
-            </p>
-        </div>
-    </section>
-
-    <!-- Recipes Section -->
-    <section class="recipes" id="recipes">
-        <div class="container">
-            <h2>Our Recipes</h2>
-            <div class="recipe-grid">
-                <div class="recipe-card">
-                    <h3>🍝 Classic Pasta</h3>
-                    <p>Homemade pasta with authentic Italian sauce. Perfect for family dinners and special occasions.</p>
-                </div>
-                <div class="recipe-card">
-                    <h3>🍪 Chocolate Cookies</h3>
-                    <p>Soft and chewy chocolate cookies made with premium cocoa. A timeless favorite for all ages.</p>
-                </div>
-                <div class="recipe-card">
-                    <h3>🥗 Fresh Salad</h3>
-                    <p>Crisp vegetables with homemade dressing. Light, healthy, and bursting with flavor.</p>
-                </div>
-                <div class="recipe-card">
-                    <h3>🍰 Vanilla Cake</h3>
-                    <p>Fluffy and moist vanilla cake perfect for celebrations and gatherings.</p>
-                </div>
-                <div class="recipe-card">
-                    <h3>🍲 Soup Delight</h3>
-                    <p>Warm and comforting soup made from fresh vegetables and aromatic herbs.</p>
-                </div>
-                <div class="recipe-card">
-                    <h3>🥖 Artisan Bread</h3>
-                    <p>Crusty on the outside, soft on the inside. Baked fresh daily with traditional methods.</p>
-                </div>
+        <div class="card">
+            <img src="coxinhas 1.jpeg" alt="Coxinha">
+            <div class="card-content">
+                <h3>Salgadinhos</h3>
+                <p>Brazilian snack - party finger food.</p>
+                <button class="add-btn">Order</button>
             </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Love our recipes? Have questions? We'd love to hear from you!</p>
-            <p>Email: <strong>contact@mlshomemade.com</strong></p>
-            <p>Follow us on social media for updates and new recipes!</p>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec" alt="Cake">
+            <div class="card-content">
+                <h3>Custom Cakes</h3>
+                <p>Premium decorated celebration cakes.</p>
+                <button class="add-btn">Order</button>
+            </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 ML's Homemade. All rights reserved. | Made with ❤️</p>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f" alt="Cupcakes">
+            <div class="card-content">
+                <h3>Cupcakes</h3>
+                <p>Soft, fluffy, and personalized cupcakes.</p>
+                <button class="add-btn">Order</button>
+            </div>
         </div>
-    </footer>
+<div class="card">
+            <img src="4july brig 1.jpeg" alt="Seasonal Specials">
+            <div class="card-content">
+                <h3>Seasonal Specials</h3>
+                <p>Exclusive treats for the current season.</p>
+                <button class="add-btn">Order</button>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-info">
+        <p>
+            Email:
+            <a href="mailto:mlshomemadeus@gmail.com">
+                mlshomemadeus@gmail.com
+            </a>
+        </p>
+
+        <p>
+            Instagram:
+            <a href="https://instagram.com/mlshomemadeus" target="_blank">
+                @mlshomemadeus
+            </a>
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 ML's Homemade. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
